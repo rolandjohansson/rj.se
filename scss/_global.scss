@@ -1,0 +1,30 @@
+body {
+  font-family: $font-stack;
+  font-size: 1.3em;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header.jumbotron {
+  background-image: url(../media/images/mountain.jpeg);
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .jumbotron-inner {
+    text-align: center;
+    h1, p {
+      margin: .5em;
+    }
+  }
+}
+
+p {
+  font-family: $font-stack-p;
+}

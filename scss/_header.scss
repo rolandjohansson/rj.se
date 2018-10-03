@@ -1,0 +1,25 @@
+nav {
+  background-color: rgb(43, 57, 61);
+  font-family: $font-stack;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    li {
+      display: inline-block;
+      a {
+        padding: 1em;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+      } &:hover {
+        background-color: darkgray;
+      }
+    }
+  }
+}
