@@ -1,6 +1,44 @@
+//main:master.scss
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-stack;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  background-color: $color-body;
+  p {
+    line-height: 1.6em;
+  }
+  a {
+    color: $color-primary;
+    font-weight: bold;
+  }
+}
+
+main {
+  box-sizing: border-box;
+  background-color: $color-main;
+  padding-top: 3em;
+  section {
+    h1 {
+      text-align: center;
+      background-color: darken($color-primary, 5%);
+      color: white;
+      margin: 0;
+      padding: 2em 0;
+    }
+    article {
+      padding: 1em 1em;
+      &:nth-of-type(even) {
+        background-color: darken($color-main, 5%);
+      }
+      p {
+        text-align: justify;
+        hyphens: auto;
+      }
+    }
+  }
 }
 
 .wrapper {
@@ -12,13 +50,14 @@ header.jumbotron {
   background-image: url(../media/images/mountain.jpeg);
   background-position: center bottom;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 60vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   .jumbotron-inner {
     text-align: center;
+    text-shadow: 1px 1px 0 black;
     h1, p {
       margin: .5em;
     }
@@ -27,4 +66,29 @@ header.jumbotron {
 
 p {
   font-family: $font-stack-p;
+}
+
+pre {
+  background-color: $color-body;
+  color: gold;
+  padding: 2em;
+}
+
+.material-icons {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.relative-container {
+  position: relative;
+}
+
+@media only screen and (min-width: 960px) {
+ main {
+   section {
+    article {
+      padding: 4em 8em;
+    }
+   }
+ }
 }

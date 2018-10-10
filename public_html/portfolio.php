@@ -1,16 +1,9 @@
 <?php
 include "header.php";
 ?>
-<header class="jumbotron">
-  <div class="jumbotron-inner">
-    <h1>roland johansson</h1>
-    <p>digtital media producer</p>
-  </div>
-</header>
 <main class="wrapper">
   <section>
-    <article>
-    <h2>Hi there,</h2>
+    <h2>Portfolio</h2>
     <p>
       The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness.
     </p>
@@ -20,7 +13,6 @@ include "header.php";
     <p>
       A cheeseburger is more than just a sandwich, it is a wish fulfilled.
     </p>
-    </article>
   </section>
 </main>
 <?php

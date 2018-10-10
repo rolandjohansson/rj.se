@@ -1,5 +1,6 @@
+//main:master.scss
 footer {
-  background-color: rgb(43, 57, 61);
+  background-color: darken($color-primary, 5%);
   padding: 4em;
   text-align: center;
   color: white;

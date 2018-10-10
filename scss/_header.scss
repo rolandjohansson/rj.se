@@ -1,25 +1,63 @@
-nav {
-  background-color: rgb(43, 57, 61);
+//main:master.scss
+#navbar {
+  background-color: $color-primary;
   font-family: $font-stack;
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline;
-    li {
-      display: inline-block;
-      a {
-        padding: 1em;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-      } &:hover {
-        background-color: darkgray;
-      }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+
+    &:hover {
+      background-color: darken($color-primary, 5%);
     }
+  }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.nav-links {
+  text-align: right;
+  background-color: $color-primary;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.nav-link-list {
+  display: none;
+  font-size: .75em;
+  background-color: rgba(0,0,0,.2);
+}
+.dropped {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .nav-links {
+    left: unset;
+    width: 30vw;
   }
 }
