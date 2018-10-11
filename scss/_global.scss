@@ -10,16 +10,16 @@ body {
   p {
     line-height: 1.6em;
   }
-  a {
-    color: $color-primary;
-    font-weight: bold;
-  }
 }
 
 main {
   box-sizing: border-box;
   background-color: $color-main;
   padding-top: 3em;
+  a {
+    color: $color-primary;
+    font-weight: bold;
+  }
   section {
     h1 {
       text-align: center;
@@ -83,7 +83,7 @@ pre {
   position: relative;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: $breakpoint) {
  main {
    section {
     article {
