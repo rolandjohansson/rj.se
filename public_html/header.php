@@ -31,17 +31,17 @@
             <li class="nav-link-category">
               <a href=""><span class="align-middle"></span> Tutorials<i class="fa fa-fw fa-caret-down" aria-hidden="true"></i></a>
               <ul class="nav-link-list">
-                <li class="nav-link"><a href="#">HTML</a></li>
-                <li class="nav-link"><a href="#">CSS</a></li>
-                <li class="nav-link"><a href="#">JavaScript</a></li>
+                <li class="nav-link"><a href="tutorials-html-css.php" onclick="event.stopPropagation();">HTML & CSS</a></li>
+                <li class="nav-link"><a href="#" onclick="event.stopPropagation();">JavaScript</a></li>
               </ul>
             </li>
             <li class="nav-link-category">
               <a href=""><span class="align-middle"></span> Portfolio<i class="fa fa-fw fa-caret-down" aria-hidden="true"></i></a>
               <ul class="nav-link-list">
-                <li class="nav-link"><a href="portfolio.php">Graphic Design</a></li>
-                <li class="nav-link"><a href="portfolio.php">Other projects</a></li>
+                <li class="nav-link"><a href="portfolio.php" onclick="event.stopPropagation();">Graphic Design</a></li>
+                <li class="nav-link"><a href="portfolio.php" onclick="event.stopPropagation();">Other projects</a></li>
               </ul>
+              <a href="contact.php" onclick="event.stopPropagation();"><span class="align-middle"></span> Contact</a>
             </li>
           </ul>
         </li>
